@@ -1,0 +1,55 @@
+1) On Staff Login:
+   --------------
+
+For profile:
+------------
+	Image(If available)
+	Name of the staff
+	Mobile Number of staff
+	Email Adress of staff
+	Organisation Name
+	Assoiciated CA Name
+	Assoiciated Unique CA_ID
+	
+Other than Profile:
+------------------
+	Comapanies Under that CA
+
+
+
+2)On selecting the company:
+  ------------------------
+		object format:{
+			ca_id
+			company_name}
+	Response:Present year (Documents to submit) and (submitted Documents)
+
+3)On selecting the year:
+  ---------------------
+		object:{
+			year
+			company_name
+			ca_id
+			}
+	Response:Documents submitted and documents to be submitted in that particular year
+
+4)On selecting the file to upload:
+  -------------------------------
+		object:{
+			company_name
+			ca_id
+			year
+			file_name
+			file
+			}
+		Should transfer the file_name from Documents to be submitted to submitted documents
+
+5)On clicking the form name to view the file
+  ------------------------------------------
+		object:{
+			file_name
+			company_name
+			ca_id
+			year
+			}
+		Response:Should get the required pdf.
